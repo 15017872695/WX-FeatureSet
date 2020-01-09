@@ -1,0 +1,2 @@
+/* pages/Developer/setting/index.wxss */
+@import '../../../components/list/index.wxss';

@@ -1,0 +1,22 @@
+<view class="weapp-about">
+    <view class="weapp-name">提灯的小僧</view>
+    <view class="webapp-intro">
+        <view class="webapp-intro-item">
+            <view class="webapp-intro-title">提灯的小僧提醒您：</view>
+            <view class="webapp-intro-content">该小程序是收集开发中频繁出现的功能模块，并且融合在一起。只用于学习和交流</view>
+            <view class="webapp-intro-title">若有侵权行为，请尽快告知：</view>
+            <view class="webapp-intro-content">邮箱 : 15017872695@163.com</view>
+            <view class="webapp-intro-content">Q Q :  360151193</view>
+        </view>
+        <view class="webapp-intro-item">
+            <view class="webapp-intro-title">GitHub</view>
+            <view class="webapp-intro-content">https://github.com/15017872695</view>
+        </view>
+        <view class="webapp-intro-item">
+            <view class="webapp-intro-title">此项目所使用到的API</view>
+            <view class="webapp-intro-content">
+            wx.request、wx.chooseImage、wx.previewImage、wx.playVoice、wx.saveFile、wx.setStorage、wx.getStorage、wx.clearStorage、wx.getStorageInfo、wx.getLocation、wx.getSystemInfo、wx.onAccelerometerChange、wx.showToast、wx.showModal、wx.showActionSheet、wx.setNavigationBarTitle、wx.navigateTo、wx.redirectTo、wx.login
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+<!-- 物流信息 -->
+<!-- 外层pages -->
+<view class='pages' wx:if="{{showexpress}}">
+  <!-- 头部 -->
+  <view class='head' wx:if='{{expresslist.data.length>0}}'>
+    <image class='head_img' src='{{expresslist.image}}'></image>
+    <view class='tabulate'>
+      <label class='head_name'>物流状态：
+        <text style='color:#000;font-size:30rpx;'>{{expresslist.state_cn}}</text>
+      </label>
+      <label class='head_title'>物流公司：
+        <text style='color:#000'>{{expresslist.comany}}</text>
+      </label>
+      <label class='head_tel_name'>快递单号: 
+        <text style='color:#000'>{{expresslist.nu}}</text>
+      </label>
+    </view>
+  </view>
+  <!-- 追踪 -->
+  <view wx:if='{{expresslist.data.length>0}}'>
+    <view class='logisit' wx:for="{{expresslist.data}}" wx:key="key" wx:for-item='item'>
+      <!-- 左边子容器 -->
+      <!-- 显示顶部收的圆点 -->
+      <view class='dot-shou  {{item.display==0?"":"dot_two"}}' wx:if="{{index==0}}"></view>
+      <view class='express-middle-axis'  wx:else>
+        <view class='dot-closing'  wx:if='{{item.display==1}}'>^</view>
+        <view class='dot-closing_two' wx:else></view>
+        <view class='online-top-closing'></view>
+      </view>
+      <!-- 右边子容器 -->
+      <view class='express-right'>
+        <view class='express-status-address {{item.display==0?"color":"color_second"}}'>{{item.context}}</view>
+        <view class='express-statusing {{item.display==0?"color":"color_second"}}'>{{item.time}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='buttom' wx:else>
+    <text>暂时没有物流信息,请稍后再来~</text>
+  </view>
+</view>

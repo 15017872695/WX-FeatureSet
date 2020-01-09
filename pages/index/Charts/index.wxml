@@ -1,0 +1,28 @@
+<!--pages/index/Charts/index.wxml-->
+<view class="Charts">
+  <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+  <button type="primary" bindtap="updateData">更新数据</button>
+
+  <view class="line"></view>
+
+  <canvas canvas-id="radarCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+
+  <view class="line"></view>
+
+  <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+
+  <view class="line"></view>
+
+  <view class="title">
+		<view wx:if="{{!isMainChartDisplay}}" class="back-btn" bindtap="backToMainChart">返回</view>
+		{{chartTitle}}
+	</view>
+    <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+    <view style="text-align:center">点击数据每一项查看详情</view>
+
+   <view class="line"></view>
+
+   <canvas canvas-id="ringCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+    <view>调用stopAnimation终止动画，并监听渲染完成事件</view>
+    <button type="primary" bindtap="updateData" style="margin-top:30rpx">更新title</button>
+</view>

@@ -1,0 +1,93 @@
+<view class="headers_wrapper" wx:if="{{signtype=='1'}}">
+    <view class="for_headerleft"><image src="/assets/img/calendar1.png" ></image></view>
+    <view class="for_headerright">
+        <view class="for_headerright_list">今日未签到</view>
+        <view class="for_headerright_list1">已连续签到<span>{{seriesCount}}</span>天 </view>
+        <view class="for_headerright_list2">再连续签到<span>{{series_gos}}</span>天即可获得更多奖励</view>
+    </view>
+</view>
+<view class="headers_wrapper" wx:if="{{signtype=='2'}}">
+    <view class="for_headerleft"><image src="/assets/img/calendar2.png" ></image></view>
+    <view class="for_headerright">
+        <view class="for_headerright_list">今日已签到</view>
+        <view class="for_headerright_list1">已连续签到<span>{{seriesCount}}</span>天 </view>
+        <view class="for_headerright_list2">再连续签到<span>{{series_gos}}</span>天即可获得更多奖励</view>
+    </view>
+</view>
+<view class="containers">
+    <view class="clearPadding">
+        <view class="calendar">
+            <view class="calen_header">
+                <button class='calendar_month_prev' bindtap="sign_prev">
+                    <image src="/assets/img/cle_btn.png"  bindtap="sign_prev"></image>
+                </button>
+                <view class="calendar_thisday">
+                    <text>{{showYear}}</text>年<text>{{showMonth}}</text>月
+                </view>
+                <button class='calendar_month_next' bindtap="sign_next">
+                    <image src="/assets/img/cle_btn.png" ></image>
+                </button>
+            </view>
+            <view class="calenbox">
+                
+            </view>
+            <view class="calendar_wrapper">
+                <view class="week_day">
+                    <view class="weeklist">日</view>
+                    <view class="weeklist">一</view>
+                    <view class="weeklist">二</view>
+                    <view class="weeklist">三</view>
+                    <view class="weeklist">四</view>
+                    <view class="weeklist">五</view>
+                    <view class="weeklist">六</view>
+                </view>
+                <view>
+                    <view class="month_day">
+                        <view class="day_list"  wx:for="{{signDays[0]}}"  wx:key="un" wx:for-index="index"  wx:for-item="item">{{item == null ? '' : item.normalday}}
+                            <view class="day_hover" wx:if="{{item.signday=='is'}}"></view>
+                        </view>
+                    </view>
+                    <view class="month_day">
+                        <view class="day_list"  wx:for="{{signDays[1]}}"  wx:key="un" wx:for-index="index"  wx:for-item="item">{{item == null ? '' : item.normalday}}<view class="day_hover" wx:if="{{signs.indexof(item)>-1}}"></view>
+                         <view class="day_hover" wx:if="{{item.signday=='is'}}"></view>
+                        </view>
+                    </view>
+                    <view class="month_day">
+                        <view class="day_list"  wx:for="{{signDays[2]}}"  wx:key="un" wx:for-index="index"  wx:for-item="item">{{item == null ? '' : item.normalday}}
+                            <view class="day_hover" wx:if="{{item.signday=='is'}}"></view>
+                        </view>
+                    </view>
+                    <view class="month_day">
+                        <view class="day_list"  wx:for="{{signDays[3]}}"  wx:key="un" wx:for-index="index"  wx:for-item="item">{{item == null ? '' : item.normalday}}
+                            <view class="day_hover" wx:if="{{item.signday=='is'}}"></view>
+                        </view>
+                    </view>
+                    <view class="month_day">
+                        <view class="day_list"  wx:for="{{signDays[4]}}"  wx:key="un" wx:for-index="index"  wx:for-item="item">{{item == null ? '' : item.normalday}}
+                            <view class="day_hover" wx:if="{{item.signday=='is'}}"></view>
+                        </view>
+                    </view>
+                    <view class="month_day">
+                        <view class="day_list"  wx:for="{{signDays[5]}}"  wx:key="un" wx:for-index="index"  wx:for-item="item">{{item == null ? '' : item.normalday}}
+                            <view class="day_hover" wx:if="{{item.signday=='is'}}"></view>
+                        </view>
+                    </view>
+                </view>
+                <!--控制月份日历输出-->
+            </view>
+            <view class="text-center"  wx:if="{{signtype=='1'}}">
+                <button class="btn-qiandao"  bindtap="sign_start" >签到</button>
+            </view>
+            <view class="text-center"  wx:if="{{signtype=='2'}}">
+                <button class="btn-qiandao1" bindtap="sign_end" >已签到</button>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="maskbox" style="display: {{for_signs}}" bindtap="close_qdbox"></view>
+<view class="qdbox" style="display: {{for_signs}}" bindtap="close_qdbox">
+    <view class="hover_title_s"><strong>签到奖励</strong></view>
+    <view class="hover_title">每天登录<br />签到可领取水晶</view>
+    <view class="hover_powerimg"><image src="/assets/img/crystal1.png"></image></view>
+    <view class="hover_powers">{{powerData}}</view>
+</view>

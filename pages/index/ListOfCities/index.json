@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-search": "/miniprogram_npm/vant-weapp/search/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
+  },
+  "navigationBarTitleText": "城市列表索引",
+  "navigationBarBackgroundColor": "#f5f5f5"
+}

@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="search">
+    <van-search style="width:100%;" value="{{ value }}" placeholder="请输入搜索地址" show-action bind:search="onSearch" use-action-slot  bind:change="onChange">
+      <view slot="action" bind:tap="onClick">搜索</view>
+    </van-search>
+  </view>
+  <!-- 搜索 -->
+  <view style='background:#ffffff' class="searchName" wx:for="{{selectData}}" wx:key="key" data-fullname="{{item}}" bindtap='selectCity'>{{item}}
+  </view>
+  <!-- 城市列表 -->
+  <view wx:if="{{selectData.length==0}}" else class='list-city'>
+    <scroll-view scroll-y="true" style="height:100%;" scroll-into-view="{{scrollTopId}}" scroll-with-animation="true" enable-back-to-top="true">
+      <!-- <view class='item' wx:if="{{city!=''}}">
+        <view class='fullname'>当前定位城市：{{city}}</view>
+      </view> -->
+      <!-- 全部 -->
+      <view class='item' wx:for="{{cityData}}" wx:for-index="idx" wx:for-item="group" wx:key="key">
+        <view class='py' id="{{idx}}">{{idx}}</view>
+        <view class="fullname" wx:for="{{group}}" wx:key="key" data-fullname="{{item.fullName}}" bindtap='selectCity'>{{item.fullName}}
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 首字母 -->
+    <view class='city-py'>
+      <view class='city-py-item' wx:for="{{_py}}" wx:key="key" bindtouchstart="getPy" bindtouchend="setPy" id="{{item}}">{{item}}
+      </view>
+    </view>
+  </view>
+</view>
+<!--选择显示-->
+<view hidden="{{hidden}}" class="showPy">{{showPy}}</view>

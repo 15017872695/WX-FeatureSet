@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <navigator url="/pages/index/ListOfCities/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>原生城市列表</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/index/LogisticsTracking/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>物流追踪状态页面</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/index/CreatePoster/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>生成分享海报</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/index/VideoSwitching/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>滚动视频切换</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/index/Charts/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>数据报表</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/index/Sigin/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>日历签到</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+</view>

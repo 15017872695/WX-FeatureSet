@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-field": "/miniprogram_npm/vant-weapp/field/index"
+  },
+  "navigationBarTitleText": "登录中心",
+  "navigationStyle":"custom"
+}

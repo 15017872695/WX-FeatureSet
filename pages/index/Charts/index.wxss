@@ -1,0 +1,10 @@
+/* pages/index/Charts/index.wxss */
+.Charts{
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+.line{
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+  margin: 80rpx 0;
+}

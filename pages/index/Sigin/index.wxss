@@ -1,0 +1,251 @@
+button::after {
+  border: none;
+}
+
+.btn-qiandao {
+  width: 200rpx;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: #02d7d7;
+  margin-left: 275rpx;
+  position: relative;
+  top: 0rpx;
+}
+
+.btn-qiandao1 {
+  width: 200rpx;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: #e1e1e1;
+  margin-left: 275rpx;
+  position: relative;
+  top: 0rpx;
+}
+
+.headers_wrapper {
+  width: 650rpx;
+  height: 200rpx;
+  background: linear-gradient(to right, #48fefe, #09dbdb);
+  overflow: hidden;
+  zoom: 1;
+  padding: 25rpx 50rpx;
+  margin-top: 0;
+}
+
+.for_headerleft {
+  float: left;
+  width: 210rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+}
+
+.for_headerleft image {
+  width: 100%;
+  height: 100%;
+}
+
+.for_headerright {
+  width: 430rpx;
+  float: right;
+  font-size: 30rpx;
+  margin-top: 22rpx;
+  color: #fff;
+}
+
+.for_headerright_list {
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+
+.for_headerright_list1 span {
+  font-weight: bold;
+  font-size: 30rpx;
+  padding: 0 5rpx;
+}
+
+.for_headerright_list2 {
+  line-height: 50rpx;
+  font-size: 24rpx;
+}
+
+.for_headerright_list2 span {
+  font-weight: bold;
+  padding: 5rpx;
+  font-size: 30rpx;
+}
+
+.for_headerright_list1 {
+  line-height: 50rpx;
+}
+
+.calen_header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.calenbox {
+  color: #00dfe1;
+  width: 100%;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+
+.calendar_month_prev {
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  background: none;
+  border: none;
+}
+
+.calendar_month_prev image {
+  width: 25rpx;
+  height: 50rpx;
+}
+
+.calendar_month_next {
+  width: 80rpx;
+  height: 80rpx;
+  float: right;
+  background: none;
+  border: none;
+}
+
+.calendar_month_next image {
+  width: 25rpx;
+  height: 50rpx;
+  transform: rotate(180deg);
+}
+
+/*微信小程序签到wxss--2018-5-25 杨京葛*/
+
+.calendar_wrapper {
+  width: 650rpx;
+  height: 560rpx;
+  margin: 20rpx 50rpx;
+  font-size: 24rpx;
+  color: #2d2d2d;
+  overflow: hidden;
+  zoom: 1;
+}
+
+/*日历大小自定义*/
+
+.week_day {
+  width: 630rpx;
+  overflow: hidden;
+  margin: 0 10rpx;
+  zoom: 1;
+  height: 90rpx;
+}
+
+.weeklist {
+  width: 90rpx;
+  height: 60rpx;
+  line-height: 90rpx;
+  text-align: center;
+  float: left;
+}
+
+/*星期定义*/
+
+.month_day {
+  width: 630rpx;
+  overflow: hidden;
+  margin: 0 10rpx;
+  zoom: 1;
+  height: 90rpx;
+}
+
+.day_list {
+  width: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+
+/*日历输出定义*/
+
+.day_hover {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDVFRDhDRDU0OUZBMTFFODg0QzJCREQ1RUY3RTNDRjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDVFRDhDRDY0OUZBMTFFODg0QzJCREQ1RUY3RTNDRjAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENUVEOENEMzQ5RkExMUU4ODRDMkJERDVFRjdFM0NGMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENUVEOENENDQ5RkExMUU4ODRDMkJERDVFRjdFM0NGMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrqjaAEAAAM0SURBVHjavJjLS1RRHMd/Mw4zjo8Z8YXvVdG4aNMiCyJSQtOK1AirhYKSbqpp364/INAiSJEWtrCQEosEJYIKylpFC40UQkclMmjGxzA++/5uv5Gr3bneOzPXL3wZ78x5fDznd37nnGuzj4+TCR2F6+TzEJwDe+Eg/Bv+Bn+CX8mnIdkMQLjhVtgPHzQBPAl3wr1wOBGIC3AXXEbxa1r+gcFYBewxvnfBD6ViIgAk9Z9Ley6jEB54GG6n5Kpd2vXsBeEU6kqyRpXSvlMP4h5cRdaqSvrRhKi3YAr0pqZ+N4RbltN+qlP63YZoTcIq0NTFzEy6m58fa9W0qSH8VgCcz8igx0VF5M/Opisej1aRm1GICpOZ0JBq0tPpaXExOW025bkjK0urGPdbwRDVyQY4lZZGAyqAr5EIXZqdjVW8miGO6eZ1kwAn3G56UVJCafZ/M/19dZVqZmbo18ZGrCrHuWS5HsAQGqzF3BpRBQCGSku3AX6srdHp6Wn6ub6uV81nl+1YU7cQUHUAeIahbUCU6+lIaioNA8ArAAF0zCMQ0Adg5dq1cnlUJzG3Si7H3PYjypu0I5wOu1w7AHjoz2AEJjEVBpTJtUKxfm1CML1cWlL+dgCkDyAtXu+OMuVOJ42WlVFuSory/AcANQAYNwbAWrTLiUhTq1tbSlQPLi4qz9xNb2EhtctyOwCAEQDkCUBwc5PqAgH6gtVgQgsMoXuqYZDLc3M0ICAcrA8KCuhOXh69BkCRw6F8vwKAegCMhcNmV/QEQ3zcq9QaQK5iRPpDoW2Q2zk5VCIADNqI39+urMSTVj4wxIiRkrzKmzEifcHgf4AcO6PLy/HmthGGGOOcYhSkbX6eHgkIP7fgeUiCNw5xv2MO1bZ63yjINXTMI8Dz/yQUSiTDd6lP27yvT1i1neucwn18HYhu5WGrtnMd+aP3EfXxjo/3PfsE0KO+h+w+6F6H31kM8B6+oXfa5lx7Dn5jEQC3exaO7HX54XCvhbuTDNAt7YaMXgOZtANukChOdBU0SnsRM3dRdbD65EA6ZbLzKannk1tXQq8G9N5P5Mp5hId4Qd5PfJY7J2fiLSON/hVgAKdV8dSBtbYzAAAAAElFTkSuQmCC) no-repeat right bottom;
+  background-size: 25rpx 25rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+/*签到样式*/
+
+.maskbox {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+
+.qdbox {
+  padding: 100rpx 25rpx;
+  width: 500rpx;
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 150rpx;
+  left: 100rpx;
+  height: 420rpx;
+  overflow: hidden;
+  zoom: 1;
+  display: none;
+}
+
+.qdbox .text-green {
+  color: #02d7d7;
+}
+
+.hover_powerimg image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 200rpx;
+  margin-bottom: 50rpx;
+}
+
+.hover_title_s {
+  width: 100%;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 36rpx;
+}
+
+.hover_title {
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 100rpx;
+}
+
+.hover_powers {
+  width: 100%;
+  text-align: center;
+}

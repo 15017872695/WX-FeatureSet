@@ -1,0 +1,14 @@
+<view class="Login" style="background:url('{{bgImgUrl}}') no-repeat 100%">
+  <image src="/assets/img/HTMLicon.jpg" class="logo"></image>
+  <view class="infoInput">
+    <van-cell-group style="width:80%;">
+      <van-field bindinput="usernameInput" left-icon="user-o" type="number" clearable icon="question-o" placeholder="请输入用户名" bind:click-icon="onClickIcon" />
+      <van-field bindinput="passwordInput" left-icon="debit-pay" type="password" placeholder="请输入密码" border="{{ false }}" />
+    </van-cell-group>
+  </view>
+  <view class="btnLogin" bindtap="goLogin">
+    <text>登</text>
+    <text>录</text>
+  </view>
+  <view class="noPossword" bindtap="noPossword">注册账号/忘记密码</view>
+</view>
