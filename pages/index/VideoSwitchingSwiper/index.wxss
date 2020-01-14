@@ -7,7 +7,7 @@
 }
 .Viedo_Continer{
   width: 100%;
-  height: 100%;
+  height: 93.5%;
   display: flex;
 }
 .Viedo_Continer>swiper{
@@ -31,6 +31,7 @@
 .VideoItem{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .viedoPlayCover{
   width: 100%;
@@ -45,4 +46,79 @@
   position: absolute;
   top: 45%;
   left: 45%;
+}
+.footer_navBar{
+  width: 100%;
+  height: 6.6%;
+  display: flex;
+  flex-wrap: nowrap;
+  background: #000;
+  color: #fff;
+  font-size: 25rpx;
+  position: fixed;
+  bottom: 0;
+  z-index:9999;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_navBar image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.footer_navBar navigator{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viedoRightBTN_Cover{
+  width: 100rpx;
+  height: 700rpx;
+  position: absolute;
+  right: 10rpx;
+  bottom: 105rpx;
+}
+.viedoRightBTN_Cover .Cover_Item{
+  width: 100%;
+  height: 105rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+.viedoRightBTN_Cover .Cover_Item .touxiang_CoverImage{
+  border-radius: 50%;
+  width: 75rpx;
+  height: 75rpx;
+  border: 1px solid #fff;
+}
+.viedoRightBTN_Cover .Cover_Item .guanzhu_CoverImage{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  top: 75rpx;
+}
+.viedoRightBTN_Cover .Cover_Item cover-view{
+  font-size: 22rpx;
+  color: #fff;
+}
+.viedoRightBTN_Cover .Cover_ItemTwo cover-image{
+  width: 75rpx;
+  height: 75rpx;
+}
+.viedoRightBTN_Cover .Cover_ItemThree cover-view{
+  width: 75rpx;
+  height: 75rpx;
+  /* background: linear-gradient(to left,#000,rgb(51, 51, 51)); */
+  background: #000;
+  border-radius: 50%;
+}
+.viedoRightBTN_Cover .Cover_ItemThree cover-image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  border-radius: 50%;
 }

@@ -20,11 +20,42 @@
               autoplay='{{false}}' 
               play-btn-position="center"
               >
+              <cover-view class="viedoRightBTN_Cover">
+                <cover-view class="Cover_Item">
+                  <cover-image src="{{item.poster}}" class="touxiang_CoverImage"></cover-image>
+                  <cover-image src="/assets/img/add.png" class="guanzhu_CoverImage"></cover-image>
+                </cover-view>
+                <cover-view class="Cover_Item Cover_ItemTwo">
+                  <cover-image src="/assets/img/start.png"></cover-image>
+                  <cover-view>60.4w</cover-view>
+                </cover-view>
+                <cover-view class="Cover_Item Cover_ItemTwo">
+                  <cover-image src="/assets/img/content.png"></cover-image>
+                  <cover-view>5069</cover-view>
+                </cover-view>
+                <cover-view class="Cover_Item Cover_ItemTwo">
+                  <cover-image src="/assets/img/share.png"></cover-image>
+                  <cover-view>3853</cover-view>
+                </cover-view>
+                <cover-view class="Cover_Item Cover_ItemThree">
+                  <cover-view></cover-view>
+                  <cover-image src="{{item.poster}}"></cover-image>
+                </cover-view>
+              </cover-view>
             </video>
             <image wx:if='{{item.play}}' src="/assets/img/play.png" class="viedoPlayImg"></image>
           </view>
         </swiper-item>
       </block>
     </swiper>
+  </view>
+  <view class="footer_navBar">
+    <navigator url="/pages/index/index" target="self" open-type="switchTab" class="seckillNavigator" hover-class="none">首页</navigator>
+    <navigator url="/pages/home/shoppingDeatils/index?ID={{item.ID}}" target="self" open-type="navigateTo" class="seckillNavigator" hover-class="none">同城</navigator>
+    <view>
+      <image src="/assets/img/addVideo.png"></image>
+    </view>
+    <navigator url="/pages/home/shoppingDeatils/index?ID={{item.ID}}" target="self" open-type="navigateTo" class="seckillNavigator" hover-class="none">消息</navigator>
+    <navigator url="/pages/home/shoppingDeatils/index?ID={{item.ID}}" target="self" open-type="navigateTo" class="seckillNavigator" hover-class="none">我</navigator>
   </view>
 </view>
