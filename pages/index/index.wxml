@@ -20,7 +20,13 @@
   </view>
   <view>
     <navigator url="/pages/index/VideoSwitching/index" target="self" open-type="navigateTo" hover-class="none">
-      <text>滚动视频切换</text>
+      <text>仿抖音滚动视频切换</text>
+      <image src="/assets/img/nextlevel2x.png"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/index/VideoSwitchingSwiper/index" target="self" open-type="navigateTo" hover-class="none">
+      <text>仿抖音滚动视频切换Swiper版(自制)</text>
       <image src="/assets/img/nextlevel2x.png"></image>
     </navigator>
   </view>

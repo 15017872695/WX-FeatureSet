@@ -1,0 +1,30 @@
+<view class="VideoSwitchingSwiper">
+  <view class="Viedo_Continer">
+    <swiper indicator-dots="{{false}}"
+      autoplay="{{false}}" interval="1000" duration="500" circular="{{false}}" vertical="true" bindchange="swiperChange">
+      <block wx:for="{{videos}}" wx:key="index">
+        <swiper-item data-index="{{index}}" bindtap="videoPlay">
+          <view class="swiper-item">
+            <video id="myVideo{{index}}" class="VideoItem" 
+              title="{{item.title}}" 
+              loop="true" 
+              src="{{item.videoUrl}}" 
+              poster="{{item.poster}}"
+              danmu-list="{{danmuList}}" 
+              enable-danmu
+              object-fit="cover"
+              danmu-btn="{{false}}" 
+              controls="{{controls}}" 
+              custom-cache="{{cache}}" 
+              show-center-play-btn="{{playBtn}}" 
+              autoplay='{{false}}' 
+              play-btn-position="center"
+              >
+              <cover-image wx:if='{{item.play}}' src="/assets/img/play.png" class="viedoPlayImg" data-index="{{index}}" bindtap="videoPlay"></cover-image>
+            </video>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+/* pages/index/VideoSwitchingSwiper/index.wxss */
+.VideoSwitchingSwiper,page{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+.Viedo_Continer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.Viedo_Continer>swiper{
+  width: 100%;
+  height: 100%;
+}
+.swiper-item{
+  width: 100%;
+  height: 100%;
+}
+.demo-text-1{
+  background-color: aqua;
+}
+.demo-text-2{
+  background-color: blueviolet;
+}
+.demo-text-3{
+  background-color: bisque;
+}
+.VideoItem{
+  width: 100%;
+  height: 100%;
+}
+.viedoPlayCover{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viedoPlayImg{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
