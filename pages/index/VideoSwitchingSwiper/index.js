@@ -144,14 +144,18 @@ Page({
     // 本视频id
     var curIdx = e.currentTarget.dataset.index;
     let data = this.data.videos;
-    
+    console.log()
     if(newCurrent){
       wx.createVideoContext('myVideo' + curIdx).pause();
+      data[curIdx].play = true;
+      newCurrent = false;
     }else{
       wx.createVideoContext('myVideo' + curIdx).play();
+      data[curIdx].play = false
+      newCurrent = true;
     }
-    newCurrent = !newCurrent;
-    data[curIdx].play = !data[curIdx].play
+    
+    
     this.setData({
       videos:data
     })

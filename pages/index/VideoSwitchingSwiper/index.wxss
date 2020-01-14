@@ -17,6 +17,7 @@
 .swiper-item{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .demo-text-1{
   background-color: aqua;
@@ -43,5 +44,5 @@
   height: 100rpx;
   position: absolute;
   top: 45%;
-  left: 42%;
+  left: 45%;
 }

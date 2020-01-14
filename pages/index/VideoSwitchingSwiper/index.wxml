@@ -20,8 +20,8 @@
               autoplay='{{false}}' 
               play-btn-position="center"
               >
-              <cover-image wx:if='{{item.play}}' src="/assets/img/play.png" class="viedoPlayImg" data-index="{{index}}" bindtap="videoPlay"></cover-image>
             </video>
+            <image wx:if='{{item.play}}' src="/assets/img/play.png" class="viedoPlayImg"></image>
           </view>
         </swiper-item>
       </block>
